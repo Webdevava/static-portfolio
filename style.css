@@ -1,0 +1,134 @@
+/* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #9eafc5;
+    overscroll-behavior: none;
+    font-family: 'Varela Round', sans-serif;
+    scrollbar-width: none;
+}
+
+nav {
+    z-index: 1;
+    font-size: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+    width: 100%;
+    height: 48px;
+    background: #7393a76e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a.active {
+    text-decoration: underline;
+    text-decoration-color: #FF6969;
+}
+
+.webdevava {
+    height: 40px;
+    border-radius: 50%;
+    margin: 2px;
+}
+
+.webdevava:hover {
+    filter: drop-shadow(0 0 20px #333);
+}
+
+footer,
+section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 48px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+#home,
+#work {
+    background: #3FC1C9;
+    color: #fff;
+    text-align: center;
+    height: 500px;
+}
+
+#about {
+    background: #398a76;
+    text-align: center;
+    height: 500px;
+}
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#work td {
+    flex-basis: 25%;
+    max-width: 200px;
+    /* Optional: Set a maximum width for the cells */
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #work td {
+        flex-basis: 50%;
+    }
+}
+
+
+#home img,
+#about img,
+#work img {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    max-width: 50%;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 4)) drop-shadow(0 1px 2px rgba(0, 0, 0, 2.5));
+}
+
+h1 {
+    margin: auto;
+    line-height: 51px;
+    vertical-align: middle;
+}
+
+p,
+h3 {
+    text-align: left;
+    overflow-wrap: break-word;
+    flex: 1;
+}
+
+footer {
+    background: #FF6969;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 20px;
+}
+
+table {
+    size: 50%;
+}
